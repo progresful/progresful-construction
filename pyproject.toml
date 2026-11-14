@@ -1,0 +1,35 @@
+[project]
+name = "constructor"
+version = "0.1.0"
+description = "Answers questions about construction drawings and shows where each answer came from."
+license = "MIT"
+requires-python = ">=3.11"
+dependencies = []
+
+[project.optional-dependencies]
+# Kept optional so the answer engine and batch runner run without the heavy stack.
+extract = [
+  "ifcopenshell",
+  "ezdxf",
+  "shapely",
+  "pypdfium2",
+  "pdfplumber",
+  "opencv-python-headless",
+  "numpy",
+]
+
+# The app's API server.
+app = ["fastapi", "uvicorn"]
+
+[dependency-groups]
+dev = ["pytest"]
+
+[project.scripts]
+constructor-batch = "constructor.batch:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.pytest.ini_options]
+markers = ["slow: parses a large IFC model (~15 s)"]

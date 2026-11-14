@@ -1,0 +1,212 @@
+{
+  "balcony": {
+    "hi": 0,
+    "lo": -1,
+    "n": 38
+  },
+  "balcony@small": {
+    "hi": 0,
+    "lo": -1,
+    "n": 38
+  },
+  "bedroom": {
+    "hi": 0,
+    "lo": 0,
+    "n": 186
+  },
+  "bedroom@medium": {
+    "hi": 1,
+    "lo": 0,
+    "n": 16
+  },
+  "bedroom@small": {
+    "hi": 0,
+    "lo": 0,
+    "n": 170
+  },
+  "door": {
+    "hi": 2,
+    "lo": -1,
+    "n": 286
+  },
+  "door@large": {
+    "hi": 5,
+    "lo": -2,
+    "n": 100
+  },
+  "door@medium": {
+    "hi": 1,
+    "lo": -1,
+    "n": 162
+  },
+  "door@small": {
+    "hi": 1,
+    "lo": 0,
+    "n": 24
+  },
+  "sink": {
+    "hi": 1,
+    "lo": -1,
+    "n": 378
+  },
+  "sink@medium": {
+    "hi": 0,
+    "lo": -2,
+    "n": 44
+  },
+  "sink@small": {
+    "hi": 1,
+    "lo": 0,
+    "n": 332
+  },
+  "wc": {
+    "hi": 0,
+    "lo": 0,
+    "n": 352
+  },
+  "wc@small": {
+    "hi": 0,
+    "lo": 0,
+    "n": 344
+  },
+  "wc_room": {
+    "hi": 0,
+    "lo": 0,
+    "n": 56
+  },
+  "wc_room@small": {
+    "hi": 0,
+    "lo": 0,
+    "n": 56
+  },
+  "whole:balconies": {
+    "hi": 0,
+    "lo": 0,
+    "n": 72
+  },
+  "whole:balconies@small": {
+    "hi": 0,
+    "lo": 0,
+    "n": 72
+  },
+  "whole:bathrooms": {
+    "hi": 0,
+    "lo": 0,
+    "n": 186
+  },
+  "whole:bathrooms@small": {
+    "hi": 0,
+    "lo": 0,
+    "n": 184
+  },
+  "whole:bedrooms": {
+    "hi": 2,
+    "lo": 0,
+    "n": 70
+  },
+  "whole:bedrooms@small": {
+    "hi": 2,
+    "lo": 0,
+    "n": 64
+  },
+  "whole:doors": {
+    "hi": 3,
+    "lo": 2,
+    "n": 10
+  },
+  "whole:kitchens": {
+    "hi": 0,
+    "lo": 0,
+    "n": 268
+  },
+  "whole:kitchens@small": {
+    "hi": 0,
+    "lo": 0,
+    "n": 268
+  },
+  "whole:saunas": {
+    "hi": 0,
+    "lo": 0,
+    "n": 276
+  },
+  "whole:saunas@small": {
+    "hi": 0,
+    "lo": 0,
+    "n": 276
+  },
+  "whole:showers_and_bathtubs": {
+    "hi": 1,
+    "lo": 0,
+    "n": 378
+  },
+  "whole:showers_and_bathtubs@small": {
+    "hi": 1,
+    "lo": 0,
+    "n": 374
+  },
+  "whole:sinks": {
+    "hi": 2,
+    "lo": 0,
+    "n": 20
+  },
+  "whole:sinks@small": {
+    "hi": 2,
+    "lo": 0,
+    "n": 20
+  },
+  "whole:storeys": {
+    "hi": 0,
+    "lo": 0,
+    "n": 402
+  },
+  "whole:storeys@small": {
+    "hi": 0,
+    "lo": 0,
+    "n": 400
+  },
+  "whole:wc_rooms": {
+    "hi": 0,
+    "lo": 0,
+    "n": 130
+  },
+  "whole:wc_rooms@small": {
+    "hi": 0,
+    "lo": 0,
+    "n": 130
+  },
+  "whole:wc_seats": {
+    "hi": 2,
+    "lo": 0,
+    "n": 48
+  },
+  "whole:wc_seats@small": {
+    "hi": 2,
+    "lo": 0,
+    "n": 48
+  },
+  "whole:windows": {
+    "hi": 6,
+    "lo": 0,
+    "n": 14
+  },
+  "window": {
+    "hi": 6,
+    "lo": -2,
+    "n": 388
+  },
+  "window@large": {
+    "hi": 9,
+    "lo": -3,
+    "n": 106
+  },
+  "window@medium": {
+    "hi": 6,
+    "lo": -2,
+    "n": 186
+  },
+  "window@small": {
+    "hi": 5,
+    "lo": 0,
+    "n": 96
+  }
+}

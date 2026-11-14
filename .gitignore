@@ -1,0 +1,19 @@
+data/
+cache/
+reviews/
+.venv/
+__pycache__/
+*.pyc
+.env
+.instructions
+
+# Holds the inference key; never commit
+.instructions
+
+# Build and tool output
+app/node_modules/
+app/dist/
+app/tsconfig.tsbuildinfo
+.pytest_cache/
+runs/
+.DS_Store
