@@ -1,0 +1,12 @@
+{
+  "name": "progresful-construction",
+  "private": true,
+  "description": "Constructor: answers questions about construction drawings, with the evidence marked on the plan",
+  "scripts": {
+    "backend": "export VERDA_INFERENCE_KEY=\"${VERDA_INFERENCE_KEY:-$(sed -n 's/^key: //p' .instructions 2>/dev/null)}\" GEMINI_API_KEY=\"${GEMINI_API_KEY:-$(sed -n 's/^gemini key: //p' .instructions 2>/dev/null)}\" CONSTRUCTOR_DATA=\"${CONSTRUCTOR_DATA:-data/full/junction-dataset}\" && uv run --extra extract --extra app uvicorn constructor.server:app --port 8000 --reload --reload-dir constructor --timeout-graceful-shutdown 3",
+    "frontend": "npm --prefix app run dev",
+    "dev": "npm run backend & npm run frontend",
+    "test": "uv run --extra extract pytest -q && npm --prefix app run typecheck && npm --prefix app test",
+    "build": "npm --prefix app run build"
+  }
+}
