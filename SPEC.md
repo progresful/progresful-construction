@@ -157,6 +157,19 @@ The cost report shows three numbers per source and tier:
 
 All costs use the provider's list price, even where we run on free credits.
 
+## Full dataset results (15 Nov 2026)
+
+All 5,939 question-bearing drawings read (4,787 CubiCasa on the VPS, the rest locally), scored with `scripts/score_full.py`:
+
+| | Train | Held-out |
+|---|---|---|
+| CubiCasa (85,514 questions) | 73.9% | 72.5% |
+| Swiss Dwellings (37,584) | 99.4% | 99.4% |
+| IFC models (3,062) | 98.2% | 97.3% |
+| All questions | 81.6% | 80.1% |
+
+Ranges recalibrated on ~3,800 training plans: the range contains the true count 84-94% of the time per type on both splits (windows 85% / 84%, doors 86% / 86%). Free-form `ifc_bench` and `opening_design` questions (text answers) remain unscored.
+
 ## Build order
 
 Each step ends with the batch runner's scoreboard, so progress is a number.

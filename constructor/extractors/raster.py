@@ -115,6 +115,8 @@ def detect_elements(path: Path, model: str | None = None):
         return [], reply
     boxes = []
     for it in items if isinstance(items, list) else []:
+        if not isinstance(it, dict):
+            continue  # a malformed reply item (e.g. a bare string)
         kind = DETECT_TYPES.get(str(it.get("label", "")).lower())
         box = it.get("box_2d")
         if kind and isinstance(box, list) and len(box) == 4:
@@ -173,6 +175,8 @@ def second_look(path: Path, boxes: list, model: str | None = None):
         return [], reply
     found = []
     for it in items if isinstance(items, list) else []:
+        if not isinstance(it, dict):
+            continue  # a malformed reply item (e.g. a bare string)
         kind = {"door": "door", "window": "window"}.get(str(it.get("label", "")).lower())
         box = it.get("box_2d")
         if not kind or not isinstance(box, list) or len(box) != 4:
@@ -401,6 +405,8 @@ def infer_rooms(path: Path, w: int, h: int, thinking: int = 0):
         return [], reply
     out = []
     for it in items if isinstance(items, list) else []:
+        if not isinstance(it, dict):
+            continue  # a malformed reply item (e.g. a bare string)
         use, b = str(it.get("use") or "other").lower(), it.get("box_2d")
         if isinstance(b, list) and len(b) == 4:
             y0, x0, y1, x1 = (float(v) for v in b)
@@ -426,6 +432,8 @@ def room_boxes(path: Path, labels: list[tuple[str, float, float]], w: int, h: in
     except ValueError:
         return boxes, areas, reply
     for it in items if isinstance(items, list) else []:
+        if not isinstance(it, dict):
+            continue  # a malformed reply item (e.g. a bare string)
         i, b = it.get("index"), it.get("box_2d")
         if not (isinstance(i, int) and 0 <= i < len(labels)):
             continue
